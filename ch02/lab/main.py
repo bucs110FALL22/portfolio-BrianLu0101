@@ -25,5 +25,6 @@ print("Your cost per class is", cost_per_class)
 
 #Part B
 Fruit = ['Apple', 'Banana', 'Grape', 'Kiwi', 'Lemon']
+randomFruit = random.choice(Fruit)
 
-print(random.choice(Fruit))
+print('Your recommended fruit for the day is', randomFruit)
