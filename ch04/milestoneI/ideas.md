@@ -18,12 +18,12 @@ For each one below you should have a basic description of a program idea, a coup
 
 ## Project Idea 1
 
-< add your idea here >
+General RPG game involving common mechanics like player and enemy status, items, and equipments. Implement gameplay mechanics like attack, block, sprint, dash, etc. Undecided on the environment type whether it would be open world, free roam, battle-only, rogue-like, etc. Game with graphics.
 
 ## Project Idea 2
 
-< add your idea here >
+A timer application that has various time related features like that of the phone application or like Windows Alarm and Clock application. Things like stopwatch, timer, clock, timezone converter, etc.
 
 ## Project Idea 3
 
-< add your idea here >
+A very basic text based adventure game. Simplistic and beginner-friendly but not exactly something difficult to achieve compared to idea 1. Backup for if idea 1 or 2 is too much work.
