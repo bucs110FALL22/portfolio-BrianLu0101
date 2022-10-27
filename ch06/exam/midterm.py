@@ -31,6 +31,24 @@ def main():
 
 
 def meteor(x,y,distsx,distsy,distex,distey,color):
+    '''
+    Description:
+      This function creates six brown meteors each followed by three streaks colored red, orange, and yellow by utilizing turtle 
+      modules and while loop for creating streaks nested within a while loop for creating a meteor. Three streaks are created each
+      time a meteor is created.
+    
+    Params:
+      x: x-coordinate location of meteor
+      y: y-coordinate location of meteor
+      distsx: starting x location of streak
+      distsy: starting y location of streak
+      distex: ending x location of streak
+      distey: ending y location of streak
+      color: color of streak
+    
+    Return:
+      Draws a brown meteor with three different colored streaks at six separate locations.
+    '''
     i = 0
     o = 0
 
@@ -69,6 +87,19 @@ def meteor(x,y,distsx,distsy,distex,distey,color):
 
 
 def stars():
+    '''
+    Description:
+      This function creates 50 white background stars simulating the appearance of looking at outer space. A for loop is used to
+      run 50 times through range(50). random module is used in order to generate random x, y coordinates for creating random
+      random locations for each star. turtle module is used to create the star.
+
+    Params:
+      None. xstar, ystar was supposed to be arguments but they have to be in the for loop in order to create new x and y values
+      each time.
+
+    Return:
+      Background filled with 50 dotted white stars.
+    '''
     for i in range(50):
         xstar = random.randrange(-450,450)
         ystar = random.randrange(-450,450)
