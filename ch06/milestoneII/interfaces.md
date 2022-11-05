@@ -23,12 +23,60 @@ Come up with interfaces fot 3 possible classes you think you may need. Again, br
 
 ## Class Interface 1
 
-< add your interface >
+class Player:
+   attributes:
+      playerName
+      playerStats
+      playerInventory
+      playerEquipment
+      playerAbilities
+      playerLocation
+      playerHeading
+      playerAnimation
+      playerSprite
+      playerClass
+      
+   methods:
+      playerAttack()
+      playerMove()
+      playerBlock()
+      playerDodge()
+      playerSprint()
+      playerCast()
+      playerUse()
+      playerInteract()
 
 ## Class Interface 2
 
-< add your interface >
+class Barrier:
+   attributes:
+      barSprite
+      barType
+      barInteractable
+      barLocation
+    
+   methods:
+      barInteract()
 
 ## Class Interface 3
 
-< add your interface >
+class Enemy:
+   attributes:
+      enemyStats
+      enemySprite
+      enemyName
+      enemyType
+      enemyAbility
+      enemyEquipment
+      enemyLootTable
+      enemyAggro
+      enemyPassive
+      
+   methods:
+      enemyAttack()
+      enemyBlock()
+      enemyDodge()
+      enemyCast()
+      enemyUse()
+      enemyMove()
+      
