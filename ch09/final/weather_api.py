@@ -2,6 +2,13 @@ import requests
 
 class Weather:
     def __init__(self,location):
+        '''
+        Definition:
+        Initialization and variables. Also latitude and longitude changes depending on location.
+
+        Parameters:
+        location = pulled from Airport() module and is used to determine latitude and longitude to be appended onto api url.
+        '''
         self.location = location.lower()
         if str(self.location) == "new york":
             self.lat = '40.71'
@@ -49,10 +56,24 @@ class Weather:
         self.info = {}
 
     def get(self):
+        '''
+        Definition:
+        API request and related information dictionary.
+
+        Parameters:
+        
+        '''
         self.response = requests.get(self.api_url)
         self.info = self.response.json()
 
     def weatherInfo(self):
+        '''
+        Definition:
+        Pulls and sets variables for necessary information that changes based on input.
+
+        Parameters:
+        
+        '''
         self.temperature = self.info['current_weather']['temperature']
         self.windspeed = self.info['current_weather']['windspeed']
         self.time = self.info['current_weather']['time']
@@ -61,6 +82,13 @@ class Weather:
         self.precipUnit = self.info['daily_units']['precipitation_sum']
 
     def update(self):
+        '''
+        Definition:
+        Updates and runs class Weather(). Also prints related information.
+
+        Parameters:
+        
+        '''
         self.get()
         self.weatherInfo()
         print("Current Time: " + self.time)
