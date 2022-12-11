@@ -11,3 +11,4 @@ Nope
 
 ## MISCELLANEOUS COMMENTS
 Information on flight conditions was supposed to include wind speed and wind direction but that would require input destination which would require flight conditions throughout the entire trip.
+Replit: Using Shell, "cd ch09/final", then "python3 main.py"
