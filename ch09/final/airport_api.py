@@ -1,5 +1,5 @@
 import requests
-from weather_api import *
+from weather_api import Weather
 
 class Airport:
     def __init__(self,code):
